@@ -16,6 +16,38 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script>
+		var end = new Date('03/17/2017 10:1 AM');
+
+		    var _second = 1000;
+		    var _minute = _second * 60;
+		    var _hour = _minute * 60;
+		    var _day = _hour * 24;
+		    var timer;
+
+		    function showRemaining() {
+		        var now = new Date();
+		        var distance = end - now;
+		        if (distance < 0) {
+
+		            clearInterval(timer);
+		            document.getElementById('countdown').innerHTML = "It's here!";
+
+		            return;
+		        }
+		        var days = Math.floor(distance / _day);
+		        var hours = Math.floor((distance % _day) / _hour);
+		        var minutes = Math.floor((distance % _hour) / _minute);
+		        var seconds = Math.floor((distance % _minute) / _second);
+
+		        document.getElementById('countdown').innerHTML = days + 'days ';
+		        document.getElementById('countdown').innerHTML += hours + 'hrs ';
+		        document.getElementById('countdown').innerHTML += minutes + 'mins ';
+		        document.getElementById('countdown').innerHTML += seconds + 'secs';
+		    }
+
+		    timer = setInterval(showRemaining, 1000);
+		</script>
 	</head>
 	<body class="landing">
 
@@ -53,10 +85,10 @@
 					<div class="inner">
 						<header>
 							<h2>Codebrew 2017</h2>
-							<p>The best hackathon of the year is coming. Stay tuned.</p>
+							<p>The best hackathon of the year is coming. Stay tuned.</br>17th - 19th March 2017.</p>
 						</header>
 						<ul class="actions">
-							<li><a href="#" class="button huge">???????</a></li>
+							<li><a href="#" class="button huge" id="countdown">???????</a></li>
 						</ul>
 					</div>
 				</div>
