@@ -3513,6 +3513,7 @@
 				border-color: #ffffff;
 			}
 
+        /* NOTE */
 		.wrapper.cta {
 			background-image: -moz-linear-gradient(top, rgba(21, 27, 33, 0.6), rgba(21, 27, 33, 0.6)), url("images/earth.png"), -moz-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/earth.jpg");
 			background-image: -webkit-linear-gradient(top, rgba(21, 27, 33, 0.6), rgba(21, 27, 33, 0.6)), url("images/earth.png"), -webkit-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/earth.jpg");
@@ -3525,17 +3526,7 @@
 			background-color: rgba(21, 27, 33, 0.6);
 			color: #ffffff;
 		}
-        .wrapper.cta2 {
-            background-image: -moz-linear-gradient(top, rgba(21, 27, 33, 0.6), rgba(21, 27, 33, 0.6)), url("images/overlay.png"), -moz-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/cta.jpg");
-            background-image: -webkit-linear-gradient(top, rgba(21, 27, 33, 0.6), rgba(21, 27, 33, 0.6)), url("images/overlay.png"), -webkit-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/cta.jpg");
-            background-image: -ms-linear-gradient(top, rgba(21, 27, 33, 0.6), rgba(21, 27, 33, 0.6)), url("images/overlay.png"), -ms-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/cta.jpg");
-            background-image: linear-gradient(top, rgba(21, 27, 33, 0.6), rgba(21, 27, 33, 0.6)), url("images/overlay.png"), linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/cta.jpg");
-			background-size: auto, auto, cover, cover;
-			background-attachment: fixed, fixed, fixed, fixed;
-			background-repeat: repeat, repeat, no-repeat, no-repeat;
-			background-color: rgba(21, 27, 33, 0.6);
-			color: #ffffff;
-		}
+
 			.wrapper.cta input, .wrapper.cta select, .wrapper.cta textarea {
 				color: #ffffff;
 			}
@@ -3636,14 +3627,142 @@
 					padding-left: 0;
 					width: 50%;
 				}
-
-			body.is-mobile .wrapper.cta {
+            body.is-mobile .wrapper.cta {
 				background-attachment: scroll;
 			}
 
 			@media screen and (max-width: 980px) {
 
 				.wrapper.cta > .inner > * {
+					width: 100% !important;
+					padding-left: 0 !important;
+				}
+
+			}
+
+
+        /* NOTE */
+		.wrapper.cta2 {
+			background-image: -moz-linear-gradient(top, rgba(21, 27, 33, 0.6), rgba(21, 27, 33, 0.6)), url("images/lab14.png"), -moz-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/lab14.jpg");
+			background-image: -webkit-linear-gradient(top, rgba(21, 27, 33, 0.6), rgba(21, 27, 33, 0.6)), url("images/lab14.png"), -webkit-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/lab14.jpg");
+			background-image: -ms-linear-gradient(top, rgba(21, 27, 33, 0.6), rgba(21, 27, 33, 0.6)), url("images/lab14.png"), -ms-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/lab14.jpg");
+			background-image: linear-gradient(top, rgba(21, 27, 33, 0.6), rgba(21, 27, 33, 0.6)), url("images/lab14.png"), linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/lab14.jpg");
+			background-position: center center;
+			background-size: auto, auto, cover, cover;
+			background-attachment: fixed, fixed, fixed, fixed;
+			background-repeat: repeat, repeat, no-repeat, no-repeat;
+			background-color: rgba(21, 27, 33, 0.6);
+			color: #ffffff;
+		}
+
+			.wrapper.cta2 input, .wrapper.cta2 select, .wrapper.cta2 textarea {
+				color: #ffffff;
+			}
+
+			.wrapper.cta2 a {
+				color: #ffffff;
+			}
+
+			.wrapper.cta2 strong, .wrapper.cta2 b {
+				color: #ffffff;
+			}
+
+			.wrapper.cta2 h1, .wrapper.cta2 h2, .wrapper.cta2 h3, .wrapper.cta2 h4, .wrapper.cta2 h5, .wrapper.cta2 h6 {
+				color: #ffffff;
+			}
+
+			.wrapper.cta2 blockquote {
+				border-left-color: #ffffff;
+			}
+
+			.wrapper.cta2 code {
+				background: rgba(255, 255, 255, 0.075);
+				border-color: #ffffff;
+			}
+
+			.wrapper.cta2 hr {
+				border-bottom-color: #ffffff;
+			}
+
+			.wrapper.cta2 input[type="submit"],
+			.wrapper.cta2 input[type="reset"],
+			.wrapper.cta2 input[type="button"],
+			.wrapper.cta2 button,
+			.wrapper.cta2 .button {
+				background-color: transparent;
+				box-shadow: inset 0 0 0 2px #ffffff;
+				color: #ffffff !important;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+			}
+
+				.wrapper.cta2 input[type="submit"]:hover,
+				.wrapper.cta2 input[type="reset"]:hover,
+				.wrapper.cta2 input[type="button"]:hover,
+				.wrapper.cta2 button:hover,
+				.wrapper.cta2 .button:hover {
+					background-color: rgba(255, 255, 255, 0.075);
+				}
+
+				.wrapper.cta2 input[type="submit"]:active,
+				.wrapper.cta2 input[type="reset"]:active,
+				.wrapper.cta2 input[type="button"]:active,
+				.wrapper.cta2 button:active,
+				.wrapper.cta2 .button:active {
+					background-color: rgba(255, 255, 255, 0.2);
+				}
+
+				.wrapper.cta2 input[type="submit"].icon:before,
+				.wrapper.cta2 input[type="reset"].icon:before,
+				.wrapper.cta2 input[type="button"].icon:before,
+				.wrapper.cta2 button.icon:before,
+				.wrapper.cta2 .button.icon:before {
+					color: #ffffff;
+				}
+
+				.wrapper.cta2 input[type="submit"].special,
+				.wrapper.cta2 input[type="reset"].special,
+				.wrapper.cta2 input[type="button"].special,
+				.wrapper.cta2 button.special,
+				.wrapper.cta2 .button.special {
+					box-shadow: none;
+					background-color: #ffffff;
+					color: rgba(21, 27, 33, 0.6) !important;
+				}
+
+					.wrapper.cta2 input[type="submit"].special.icon:before,
+					.wrapper.cta2 input[type="reset"].special.icon:before,
+					.wrapper.cta2 input[type="button"].special.icon:before,
+					.wrapper.cta2 button.special.icon:before,
+					.wrapper.cta2 .button.special.icon:before {
+						color: #ffffff;
+					}
+
+			.wrapper.cta2 > .inner {
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+			}
+
+				.wrapper.cta2 > .inner > * {
+					padding-left: 1.5em;
+					-ms-flex: auto;
+					width: 50%;
+				}
+
+				.wrapper.cta2 > .inner > :first-child {
+					padding-left: 0;
+					width: 50%;
+				}
+
+			body.is-mobile .wrapper.cta2 {
+				background-attachment: scroll;
+			}
+
+			@media screen and (max-width: 980px) {
+
+				.wrapper.cta2 > .inner > * {
 					width: 100% !important;
 					padding-left: 0 !important;
 				}
@@ -4312,24 +4431,18 @@
 
 /* Footer */
 
-	#footer {
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
-		background-image: url("images/overlay.png"), linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
-		background-position: center center;
-		background-size: auto, cover, cover;
-		background-attachment: fixed, fixed, fixed;
-		background-repeat: repeat, no-repeat, no-repeat;
-		background-color: rgba(21, 27, 33, 0.6);
-		color: #ffffff;
-	    position:absolute;
-	    top:35em;
-	    bottom:0;
-	    left:0;
-	    width:100%;
-	    background-color:#9ACD32;
-	}
+    #footer {
+        background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
+        background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
+        background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
+        background-image: url("images/overlay.png"), linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
+        background-position: center center;
+        background-size: auto, cover, cover;
+        background-attachment: fixed, fixed, fixed;
+        background-repeat: repeat, no-repeat, no-repeat;
+        background-color: rgba(21, 27, 33, 0.6);
+        color: #ffffff;
+    }
 
 		#footer input, #footer select, #footer textarea {
 			color: #ffffff;
