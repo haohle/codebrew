@@ -48,6 +48,24 @@
 
 		    timer = setInterval(showRemaining, 1000);
 		</script>
+        <script>
+        var status = "less";
+
+        function toggleText()
+        {
+            var text="Teams will receive cash commercialisation grants and may gain entry into the Imagine Cup Australia Finals (22nd April) for the chance to be sent to Seattle and represent Australia in the Imagine Cup Global competition. ";
+
+            if (status == "less") {
+                document.getElementById("textArea").innerHTML=text;
+                document.getElementById("toggleButton").innerText = "Less...";
+                status = "more";
+            } else if (status == "more") {
+                document.getElementById("textArea").innerHTML = "";
+                document.getElementById("toggleButton").innerText = "More...";
+                status = "less"
+            }
+        }
+        </script>
 	</head>
 	<body class="landing">
 
@@ -114,9 +132,7 @@
                         <li>
 							<h3 class="icon style4 fa-windows ">Microsoft Prizes</br>So many!</h3>
 							<p>2x Microsoft Innovation Prizes for the most innovative solutions on Azure.
-                            </br>Teams will receive cash commercialisation grants and may gain entry into
-                            the Imagine Cup Australia Finals (22nd April) for the chance to be sent to
-                            Seattle and represent Australia in the Imagine Cup Global competition.</p>
+                            </br><span id="textArea"></span><a id="toggleButton" onclick="toggleText();" href="javascript:void(0);">More...</a></p>
 						</li>
 					</ul>
 				</div>
