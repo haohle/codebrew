@@ -2393,20 +2393,24 @@
 			border-color: rgba(144, 144, 144, 0.25);
 		}
 
-        ul.features li:nth-child(4n - 3) h3:before {
+        ul.features li:nth-child(5n - 4) h3:before {
 			color: #dbd42c; /* NOTE trophy 1 here!!!! */
 		}
 
-		ul.features li:nth-child(4n - 2) h3:before {
-			color: #dbd42c; /* NOTE trophy 1 here!!!! */
+		ul.features li:nth-child(5n - 3) h3:before {
+			color: #BDBEC2; /* NOTE trophy 2 here!!!! */
 		}
 
-		ul.features li:nth-child(4n - 1) h3:before {
-			color: #c0c0c0; /* NOTE trophy two 2!!! */
+		ul.features li:nth-child(5n - 2) h3:before {
+			color: #A67D3D; /* NOTE trophy 3 here!!! */
 		}
 
-		ul.features li:nth-child(3n) h3:before {
-			color: #A67D3D;
+        ul.features li:nth-child(5n - 1) h3:before {
+			color: #47BBC0; /* NOTE trophy 4 here!!! */
+		}
+
+		ul.features li:nth-child(5n) h3:before {
+			color: #47BBC0; /* NOTE trophy 5 here!!! */
 		}
 
 /* Posts */
